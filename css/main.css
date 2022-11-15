@@ -1,7 +1,15 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    overflow-x: hidden;
 }
 
 button{
@@ -30,6 +38,23 @@ label{
     left: 34%;
     
     transform: translateY(10px);
-   
-   
+}
+
+/* My styles  */
+
+.poke-container .pokemon-block{ 
+    width: 25%;
+    height: 200px;
+    border-radius: 5px;
+    margin: 13px;
+    background-color: #f0f0f0 !important;
+}
+
+.background{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
 }
