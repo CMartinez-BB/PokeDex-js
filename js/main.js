@@ -63,15 +63,16 @@ function generatePokemon(poke) {
     spriteContainer.appendChild(sprite); //Pokemon loanding
 
     const number = document.createElement('p')
+    number.classList.add('number_id')
     number.textContent = `#${poke.id.toString().padStart(3, 0)}` //Add number of pokemon
     
-    const name_poke = document.createElement('p')
+    const name_poke = document.createElement('p','br')
     name_poke.classList.add('name')
-    name_poke.textContent ="name"+ poke.name;
+    name_poke.textContent =poke.name;
 
     const ability_pokemon = document.createElement('p')
     ability_pokemon.classList.add('Ability')
-    ability_pokemon.textContent = "Ability "+poke.abilities[0].ability.name;
+    ability_pokemon.textContent = poke.abilities[0].ability.name;
 
     card.appendChild(spriteContainer)
     card.appendChild(number)
