@@ -31,6 +31,13 @@ search.addEventListener('click', e => {
     getSearchId(textPo);
 })
 
+// add function to display cards 
+function showPokemons(number){
+    for(let i=0; i<=number; i++){
+        getSearchId(i)
+    }
+}
+
 //Function generate of pokemons
 function generatePokemon(poke) {
     //Created card to pokemons
@@ -67,3 +74,4 @@ function generatePokemon(poke) {
 
 }
 
+showPokemons(9);
